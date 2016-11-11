@@ -1,10 +1,11 @@
-# Clean Start
+# PrivacyPortal.org
 ---
-#### The plain and simple starter.
 
-# Installation
+# Adding tools
+See `data/tools.json`
+
+# Development
 ---
-Install this starter (assuming Gatsby is installed) by running from your CLI: 
-```
-gatsby new clean gh:brianstone/gatsby-starter-clean
-```
+* `npm i -g yarn`
+* `yarn`
+* `npm run develop`

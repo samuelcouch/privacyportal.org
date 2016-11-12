@@ -7,6 +7,7 @@ import { config } from 'config'
 import { tools } from 'data/tools.json'
 
 import Hero from 'components/hero'
+import Sidebar from 'components/sidebar'
 import { ItemCard } from 'components/item'
 
 export default class Index extends React.Component {
@@ -14,6 +15,7 @@ export default class Index extends React.Component {
     return (
         <div>
             <Hero />
+            <Sidebar />
         </div>
     )
   }

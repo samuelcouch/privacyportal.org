@@ -1,0 +1,11 @@
+.fill {
+    height: 100vh;
+    padding: 0px;
+}
+
+.sidebarStyle {
+    height: 100vh;
+    flex: none;
+    width: 300px;
+    background-color: #F5F5F5;
+}

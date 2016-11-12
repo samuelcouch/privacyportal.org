@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../node_modules/bulma/bulma.sass'
+import '../assets/sass/main.sass'
 import '../assets/css/main.css'
 
 import Hero from 'components/hero'
@@ -15,7 +15,7 @@ module.exports = React.createClass({
   render () {
     return (
         <div>
-            <Hero />
+            {this.props.children}
         </div>
     )
   },

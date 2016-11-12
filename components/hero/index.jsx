@@ -10,7 +10,7 @@ import phoneImg from '../../assets/images/phone.svg'
 export default class Hero extends React.Component {
     render() {
         return (
-            <section className={classNames("hero", "is-primary", styles.headColor)}>
+            <section className={classNames("hero", "is-primary")}>
                 <div className="hero-body">
                     <div className="container">
                         <div className="columns is-vcentered">
@@ -20,7 +20,7 @@ export default class Hero extends React.Component {
                                     Today, more than ever, it's important to be aware of the technology that you use on a daily basis, and how to protect your privacy. We reliaze that everyone has different concerns and want to be able to suggest tips and tools to best suit your needs, and keep you safe!
                                 </p>
                             </div>
-                            <div className="column is-4 is-offset-3">
+                            <div className={classNames("column", "is-narrow", "is-offset-1")}>
                                 <img src={laptopImg} />
                                 <img className={styles.iconImg} src={phoneImg} />
                             </div>

@@ -1,7 +1,9 @@
 import React from 'react'
-import '../assets/css/normalize.css'
-import '../assets/css/skeleton.css'
+
+import '../node_modules/bulma/bulma.sass'
 import '../assets/css/main.css'
+
+import Hero from 'components/hero'
 
 module.exports = React.createClass({
   propTypes () {
@@ -12,26 +14,9 @@ module.exports = React.createClass({
 
   render () {
     return (
-      <div className="container">
-          <div className="row">
-              <section>
-                  <nav className="sidebar">
-                      <ul className="sidebar-items">
-                          <li>ONE</li>
-                          <li>TWO</li>
-                          <li>THREE</li>
-                          <li>FOUR</li>
-                      </ul>
-                  </nav>
-                  &nbsp;
-              </section>
-              <section className="nine columns" style={{
-                      marginTop: 50,
-                  }}>
-                  {this.props.children}
-              </section>
-          </div>
-      </div>
+        <div>
+            <Hero />
+        </div>
     )
   },
 })

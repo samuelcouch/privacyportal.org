@@ -31,12 +31,12 @@ export default class ItemCard extends React.Component {
                   <div className="card" onClick={this.handleFullscreen.bind(this)}>
                       <header className="card-header">
                           <p className={classNames("card-header-title", styles.toolTitle)}>
-                              Signal
+                              {tool.name}
                           </p>
                       </header>
                       <div className="card-content">
                           <div className="content">
-                              A free end-to-end encrypted messaging platform for iOS and Andoid (with desktop applications).
+                              {tool.short_description}
                           </div>
                       </div>
                   </div>

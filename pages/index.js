@@ -18,7 +18,7 @@ export default class Index extends React.Component {
             <div className="container is-fluid">
                 <div className="columns">
                     <Sidebar />
-                    <ItemGrid />
+                    <ItemGrid items={tools}/>
                 </div>
             </div>
         </div>

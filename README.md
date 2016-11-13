@@ -8,4 +8,4 @@ See `data/tools.json`
 ---
 * `npm i -g yarn`
 * `yarn`
-* `npm run develop`
+* `yarn run develop`

@@ -1,14 +1,3 @@
-.card {
-    background-color: #F4FCF4;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
-    margin-bottom: 8px;
-}
-
-.inner {
-    padding: 15px 15px 2px 15px;
-}
-
-.disabled {
-    composes: card;
-    display: none;
+.toolTitle {
+    text-transform: uppercase;
 }

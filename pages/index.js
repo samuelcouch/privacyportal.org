@@ -8,15 +8,18 @@ import { tools } from 'data/tools.json'
 
 import Hero from 'components/hero'
 import Sidebar from 'components/sidebar'
-import { ItemCard } from 'components/item'
+import { ItemCard, ItemGrid } from 'components/item'
 
 export default class Index extends React.Component {
   render () {
     return (
         <div>
             <Hero />
-            <div className="columns">
-                <Sidebar />
+            <div className="container is-fluid">
+                <div className="columns">
+                    <Sidebar />
+                    <ItemGrid />
+                </div>
             </div>
         </div>
     )

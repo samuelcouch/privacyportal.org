@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
+import classNames from 'classnames'
 
 import styles from './styles.module.css'
 
@@ -25,10 +26,20 @@ export default class ItemCard extends React.Component {
         const { tool } = this.props
 
         return(
-            <div className={styles.card} onClick={this.handleFullscreen.bind(this)}>
-                <div className={styles.inner}>
-                    <h2>{tool.name}</h2>
-                    <p>{tool.description}</p>
+            <div>
+                <div className="column">
+                  <div className="card" onClick={this.handleFullscreen.bind(this)}>
+                      <header className="card-header">
+                          <p className={classNames("card-header-title", styles.toolTitle)}>
+                              Signal
+                          </p>
+                      </header>
+                      <div className="card-content">
+                          <div className="content">
+                              A free end-to-end encrypted messaging platform for iOS and Andoid (with desktop applications).
+                          </div>
+                      </div>
+                  </div>
                 </div>
             </div>
         );

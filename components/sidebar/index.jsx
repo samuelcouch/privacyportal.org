@@ -8,8 +8,8 @@ import styles from './styles.module.css'
 export default class Sidebar extends React.Component {
     render() {
         return (
-            <div className={classNames("column", styles.sidebarStyle)}>
-                <p>SELECT A CATEGORY</p>
+            <div className={classNames("column", "is-2", styles.sidebarStyle)}>
+                <p className={styles.topSpace}>SELECT A CATEGORY</p>
                 <br />
                 <aside className="menu">
                     <ul className="menu-list">
@@ -39,6 +39,7 @@ export default class Sidebar extends React.Component {
                             <ul>
                                 <li><a className="menu-label">Passwords</a></li>
                                 <li><a className="menu-label">Browser privacy</a></li>
+                                <li><a className="menu-label">Email</a></li>
                             </ul>
                         </li>
                     </ul>

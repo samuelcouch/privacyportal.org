@@ -15,7 +15,9 @@ export default class Index extends React.Component {
     return (
         <div>
             <Hero />
-            <Sidebar />
+            <div className="columns">
+                <Sidebar />
+            </div>
         </div>
     )
   }

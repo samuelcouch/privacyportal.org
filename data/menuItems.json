@@ -1,0 +1,16 @@
+{
+    "menuItems": [
+        {
+            "head": "Mobile",
+            "children": ["iOS", "Android"]
+        },
+        {
+            "head": "Desktop",
+            "children": ["OS X", "Windows", "Linux"]
+        },
+        {
+            "head": "General",
+            "children": ["Passwords", "Browser Privacy", "Email"]
+        }
+    ]
+}

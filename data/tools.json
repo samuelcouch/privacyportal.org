@@ -15,7 +15,8 @@
                 }
             },
             "short_description": "A free end-to-end encrypted messaging platform for iOS and Andoid (with desktop applications).",
-            "long_description": "Signal is an encrypted instant messaging and voice calling application for Android and iOS. It uses the Internet to send one-to-one and group messages, which can include images and video messages, and make one-to-one voice calls. Signal uses standard cellular mobile numbers as identifiers and end-to-end encryption to secure all communications to other Signal users. The applications include mechanisms by which users can independently verify the identity of their messaging correspondents and the integrity of the data channel.",
+            "long_description": ["Signal is an encrypted instant messaging and voice calling application for Android and iOS. It uses the Internet to send one-to-one and group messages, which can include images and video messages, and make one-to-one voice calls. Signal uses standard cellular mobile numbers as identifiers and end-to-end encryption to secure all communications to other Signal users. The applications include mechanisms by which users can independently verify the identity of their messaging correspondents and the integrity of the data channel."],
+            "notes": "Ensures the message is only readable by the sender and recipient, but does not ensure anonymity.",
             "scope": ["msg", "mobile", "desktop"]
         }
     ]

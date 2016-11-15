@@ -2156,13 +2156,7 @@ fb-watchman@^1.8.0:
   dependencies:
     bser "^1.0.2"
 
-fbemitter@^2.0.0:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/fbemitter/-/fbemitter-2.1.1.tgz#523e14fdaf5248805bb02f62efc33be703f51865"
-  dependencies:
-    fbjs "^0.8.4"
-
-fbjs@^0.8.0, fbjs@^0.8.4:
+fbjs@^0.8.4:
   version "0.8.5"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.5.tgz#f69ba8a876096cb1b9bffe4d7c1e71c19d39d008"
   dependencies:
@@ -2287,13 +2281,6 @@ flagged-respawn@^0.3.2:
 flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
-
-flux:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/flux/-/flux-3.1.0.tgz#c3445ed6309a645a6d484e7cb5cba66028d581f1"
-  dependencies:
-    fbemitter "^2.0.0"
-    fbjs "^0.8.0"
 
 for-in@^0.1.5:
   version "0.1.6"
@@ -2866,7 +2853,7 @@ hoek@^2.14.x, hoek@^2.9.x, hoek@2.x.x:
   version "2.16.3"
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-2.16.3.tgz#20bb7403d3cea398e91dc4710a8ff1b8274a25ed"
 
-hoist-non-react-statics@^1.2.0:
+hoist-non-react-statics@^1.0.3, hoist-non-react-statics@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
 
@@ -5173,6 +5160,15 @@ react-proxy@^1.1.7:
   dependencies:
     lodash "^4.6.1"
     react-deep-force-update "^1.0.0"
+
+react-redux:
+  version "4.4.6"
+  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-4.4.6.tgz#4b9d32985307a11096a2dd61561980044fcc6209"
+  dependencies:
+    hoist-non-react-statics "^1.0.3"
+    invariant "^2.0.0"
+    lodash "^4.2.0"
+    loose-envify "^1.1.0"
 
 react-router-scroll@^0.3.1:
   version "0.3.3"

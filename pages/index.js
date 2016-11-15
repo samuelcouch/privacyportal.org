@@ -5,23 +5,24 @@ import { Helmet } from 'react-helmet'
 import { config } from 'config'
 
 import { tools } from 'data/tools.json'
+import { menuItems } from 'data/menuItems.json'
 
 import Hero from 'components/hero'
-import Sidebar from 'components/sidebar'
+import { Menu } from 'components/sidebar'
 import { ItemCard, ItemGrid } from 'components/item'
 
 export default class Index extends React.Component {
-  render () {
-    return (
-        <div>
-            <Hero />
-            <div className="container is-fluid">
-                <div className="columns">
-                    <Sidebar />
-                    <ItemGrid items={tools}/>
+    render () {
+        return (
+            <div>
+                <Hero />
+                <div className="container is-fluid">
+                    <div className="columns">
+                        <Menu menuGroups={menuItems} />
+                        <ItemGrid items={tools}/>
+                    </div>
                 </div>
             </div>
-        </div>
-    )
-  }
+        )
+    }
 }

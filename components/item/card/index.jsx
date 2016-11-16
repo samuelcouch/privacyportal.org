@@ -3,6 +3,8 @@ import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import classNames from 'classnames'
 
+import Modal from '../modal'
+
 import styles from './styles.module.css'
 
 export default class ItemCard extends React.Component {
@@ -10,13 +12,15 @@ export default class ItemCard extends React.Component {
         super(props)
 
         this.state = {
-            fullscreen: false,
+            modalIsActive: false,
         }
+
+        this.handleToggle = this.handleToggle.bind(this)
     }
 
-    handleFullscreen() {
+    handleToggle() {
         this.setState({
-            fullscreen: !this.state.fullscreen
+            modalIsActive: !this.state.modalIsActive
         })
     }
 
@@ -26,7 +30,7 @@ export default class ItemCard extends React.Component {
         return(
             <div>
                 <div className="column">
-                  <div className="card" onClick={this.handleFullscreen.bind(this)}>
+                  <div className="card" onClick={this.handleToggle}>
                       <header className="card-header">
                           <p className={classNames("card-header-title", styles.toolTitle)}>
                               {tool.name}
@@ -39,6 +43,7 @@ export default class ItemCard extends React.Component {
                       </div>
                   </div>
                 </div>
+                <Modal details={tool} active={this.state.modalIsActive} clickHandler={this.handleToggle} />
             </div>
         );
     }

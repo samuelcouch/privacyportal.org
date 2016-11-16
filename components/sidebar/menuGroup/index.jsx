@@ -9,7 +9,8 @@ import styles from './styles.module.css'
 
 export default class MenuGroup extends React.Component {
     render() {
-        const { group } = this.props
+        const { group, updateSelection } = this.props
+
         return (
             <div>
                 <li>
@@ -17,7 +18,7 @@ export default class MenuGroup extends React.Component {
                 </li>
                 <li>
                     <ul>
-                        {group.children.map((entry) => <MenuGroupItem item={entry} />)}
+                        {group.children.map((entry, i) => <MenuGroupItem item={entry} key={i} updateSelection={updateSelection} />)}
                     </ul>
                 </li>
             </div>

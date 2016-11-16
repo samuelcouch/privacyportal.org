@@ -6,11 +6,16 @@ import classNames from 'classnames'
 import styles from './styles.module.css'
 
 export default class MenuGroupItem extends React.Component {
+    static propTypes = {
+        updateSelection: React.PropTypes.func.isRequired
+    }
+
     render() {
-        const { item } = this.props
+        const { item, updateSelection } = this.props
+        const key = item.replace(/\s/g,'').toLowerCase()
 
         return (
-                <li key={item.replace(/\s/g,'').toLowerCase()}><a href="#">{item}</a></li>
+                <li key={key}><a onClick={() => updateSelection(key)} href="#">{item}</a></li>
         )
     }
 }

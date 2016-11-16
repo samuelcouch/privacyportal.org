@@ -10,7 +10,7 @@
         },
         {
             "head": "General",
-            "children": ["Passwords", "Hardware", "Browser Privacy", "Email"]
+            "children": ["Passwords", "Hardware", "Browser Privacy", "Email", "Social Media"]
         }
     ]
 }

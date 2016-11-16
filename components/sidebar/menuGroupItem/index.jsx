@@ -7,15 +7,18 @@ import styles from './styles.module.css'
 
 export default class MenuGroupItem extends React.Component {
     static propTypes = {
-        updateSelection: React.PropTypes.func.isRequired
+        item: React.PropTypes.string.isRequired,
+        updateSelection: React.PropTypes.func.isRequired,
+        active: React.PropTypes.string.isRequired
     }
 
     render() {
-        const { item, updateSelection } = this.props
+        const { item, updateSelection, active } = this.props
         const key = item.replace(/\s/g,'').toLowerCase()
+        const activeClass = (active == key)? 'is-active':''
 
         return (
-                <li key={key}><a onClick={() => updateSelection(key)} href="#">{item}</a></li>
+                <li key={key}><a className={activeClass} onClick={() => updateSelection(key)}>{item}</a></li>
         )
     }
 }

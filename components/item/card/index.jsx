@@ -18,8 +18,6 @@ export default class ItemCard extends React.Component {
         this.setState({
             fullscreen: !this.state.fullscreen
         })
-
-        console.log(this.state.fullscreen)
     }
 
     render() {

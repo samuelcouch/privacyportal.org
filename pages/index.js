@@ -34,7 +34,7 @@ export default class Index extends React.Component {
                 <Hero />
                 <div className="container is-fluid">
                     <div className="columns">
-                        <Menu menuGroups={menuItems} updateSelection={actions.updateSelection} />
+                        <Menu menuGroups={menuItems} updateSelection={actions.updateSelection} active={selection.selection} />
                         <ItemGrid items={tools}/>
                     </div>
                 </div>

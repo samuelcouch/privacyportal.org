@@ -8,8 +8,14 @@ import MenuGroupItem from '../menuGroupItem'
 import styles from './styles.module.css'
 
 export default class MenuGroup extends React.Component {
+    static propTypes = {
+        group: React.PropTypes.object.isRequired,
+        updateSelection: React.PropTypes.func.isRequired,
+        active: React.PropTypes.string.isRequired
+    }
+
     render() {
-        const { group, updateSelection } = this.props
+        const { group, updateSelection, active } = this.props
 
         return (
             <div>
@@ -18,7 +24,7 @@ export default class MenuGroup extends React.Component {
                 </li>
                 <li>
                     <ul>
-                        {group.children.map((entry, i) => <MenuGroupItem item={entry} key={i} updateSelection={updateSelection} />)}
+                        {group.children.map((entry, i) => <MenuGroupItem item={entry} key={i} updateSelection={updateSelection} active={active} />)}
                     </ul>
                 </li>
             </div>
